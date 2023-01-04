@@ -22,6 +22,8 @@ const BotBuilder = new BotBuilder({
    features: ["music"], // optional; default: []
    logChannelId: "12345", // optional; default: ""
 });
+
+client.login(config.token)
 ```
 
 ## Create a bot
