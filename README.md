@@ -1,3 +1,4 @@
+![Build A Bot](https://cdn.discordapp.com/attachments/855212186041319455/1048180291614806106/BAB_Banner.png)
 # Documentation for Bot Builder
 
 ## Set up the project
