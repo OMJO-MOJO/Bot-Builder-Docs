@@ -19,8 +19,8 @@ const BotBuilder = new BotBuilder({
    client: client, // required
    botsPath: "./bots", // required
    tokensPath: "./tokens.txt", // required
-   features: ["music"], // optional; default: []
-   logChannelId: "12345", // optional; default: ""
+   features: ["music"], // optional
+   logChannelId: "12345", // optional;
 });
 
 client.login(config.token)
@@ -31,8 +31,8 @@ client.login(config.token)
 ``` js
 BotBuilder.create(userId, {
   username: "Bot's Username", // required
-  description: "This is an example of the bot's description", // optional; default: ""
-  features: ["music"], // optional; default: []
+  description: "Bot's description", // optional
+  features: ["music"], // optional
   token: "BOT_TOKEN", // optional; default: fetches one from the token list in the token's path
 });
 ```
@@ -41,9 +41,9 @@ BotBuilder.create(userId, {
 > If a username, description and/or features is not passed through, the Bot Builder will not update it and use the existing options
 ``` js
 BotBuilder.edit(userId, {
-  username: "New username", // optional; default: current username
-  description: "New Description", // optional; default: current description
-  features: ["New Feature"], // optional; default: current features
+  username: "New username", // optional; default: doesn't update username
+  description: "New Description", // optional; default: doesn't update description
+  features: ["New Feature"], // optional; default: doesn't update features
 });
 ```
 
