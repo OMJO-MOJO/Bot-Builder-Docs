@@ -45,7 +45,6 @@ BotBuilder.create(userId, {
 });
 ```
 ### Result of the create method
-> The id and client of the bot will be updated when the bot is online and ready.
 ``` js
 BotInstance {
    _config: {
@@ -58,7 +57,9 @@ BotInstance {
       iconURL: 'https://cdn.discordapp.com/attachments/855212186041319455/1011933282096648192/default-icon.png',
       timestamps: { username: 0, avatar: 0 }
    },
-   _client: {}
+   _client: {
+      // Normal Discord Client
+   }
 } 
 ```
 
