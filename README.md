@@ -2,31 +2,6 @@
 # Documentation for Bot Builder
 This is still a work in progress
 
-## Set up the project
-> The features in the Bot Builder options is the list of available features to select from.
-``` js
-// Import the package
-const { Client, IntentsBitField, Partials } = require("discord.js");
-const BotBuilder = require("BotBuilder");
-
-// Create a discord client
-const client = new Client({
-   intents: [IntentsBitField.Flags.Guilds],
-   partials: [Partials.Channel],
-});
-
-// Create the Bot Builder
-const BotBuilder = new BotBuilder({
-   client: client, // required
-   botsPath: "./bots", // required
-   tokensPath: "./tokens.txt", // required
-   features: ["music"], // optional
-   logChannelId: "12345", // optional;
-});
-
-client.login(config.token)
-```
-
 ## Create a bot
 When creating a bot, it will return a promise that responds with a Bot Instance and it will automatically start the bot, so no need to manually start the bot when created.
 > The features in the Create options is the features that the user selects for their bot.
