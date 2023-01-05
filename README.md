@@ -1,5 +1,6 @@
 ![Build A Bot](https://cdn.discordapp.com/attachments/855212186041319455/1048180291614806106/BAB_Banner.png)
 # Documentation for Bot Builder
+This is still a work in progress
 
 ## Set up the project
 > The features in the Bot Builder options is the list of available features to select from.
