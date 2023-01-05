@@ -78,6 +78,16 @@ BotBuilder.edit(userId, {
 BotBuilder.delete(userId);
 ```
 
+Below are some other functions that may be useful
+
+## Start a bot
+``` js
+BotBuilder.cache
+   .get(userId)
+   .start(userId)
+   .then((client) => console.log(client))
+   .catch((err) => console.log(err))
+```
 
 
 
