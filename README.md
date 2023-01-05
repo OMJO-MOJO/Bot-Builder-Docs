@@ -27,6 +27,7 @@ client.login(config.token)
 ```
 
 ## Create a bot
+When creating a bot, it will return a promise that responds with a Bot Instance
 > The features in the Create options is the features that the user selects for their bot.
 ``` js
 BotBuilder.create(userId, {
@@ -34,7 +35,31 @@ BotBuilder.create(userId, {
   description: "Bot's description", // optional
   features: ["music"], // optional
   token: "BOT_TOKEN", // optional; default: fetches one from the token list in the token's path
+})
+.then((botInstance) => {
+   // rest of the code ...
+})
+.catch((err) => {
+   // Returns an error message in string format
+   console.log(err)
 });
+```
+### Result of the create method
+> The id and client of the bot will be updated when the bot is online and ready.
+``` js
+BotInstance {
+   _config: {
+      id: null,
+      userId: '12345',
+      username: 'username',
+      description: 'description',
+      features: [ 'features' ],
+      token: '',
+      iconURL: 'https://cdn.discordapp.com/attachments/855212186041319455/1011933282096648192/default-icon.png',
+      timestamps: { username: 0, avatar: 0 }
+   },
+   _client: {}
+} 
 ```
 
 ## Edit a bot
