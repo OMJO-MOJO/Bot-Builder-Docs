@@ -27,7 +27,7 @@ client.login(config.token)
 ```
 
 ## Create a bot
-When creating a bot, it will return a promise that responds with a Bot Instance
+When creating a bot, it will return a promise that responds with a Bot Instance and it will automatically start the bot, so no need to manually start the bot when created.
 > The features in the Create options is the features that the user selects for their bot.
 ``` js
 BotBuilder.create(userId, {
@@ -64,7 +64,7 @@ BotInstance {
 ```
 
 ## Edit a bot
-> If a username, description and/or features is not passed through, the Bot Builder will not update it and use the existing options
+> If a username, description and/or features is not passed through, the Bot Builder will not update it and use the existing options.
 ``` js
 BotBuilder.edit(userId, {
   username: "New username", // optional; default: doesn't update username
